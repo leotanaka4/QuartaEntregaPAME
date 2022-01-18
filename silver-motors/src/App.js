@@ -44,7 +44,7 @@ function App() {
       </div>
       <div id="conteudo">
         <div id="historia">
-          <h2>Quem nós somos?</h2>
+          <h2>O que nós somos?</h2>
           <p>
             Somos uma empresa de vendas de carros novos e seminovos
             há mais de 3 anos no mercado com ótimos profissionais e técnicos
@@ -235,8 +235,8 @@ function App() {
         </div>
       </div>
       <div id = "rodape">
-        <h4>Telefone de contato:</h4>
-        <p>+55 21 2498-2088</p>
+        <h5>Telefone de contato:</h5>
+        <p id="telefone">+55 21 2498-2088</p>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 5000px;
+  height: 6000px;
 }
 
 /*Principais*/
@@ -19,11 +19,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-radius: 30px;
 }
 #conteudo {
   background: white;
   width: 100%;
-  height: 4800px;
+  height: 5800px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -37,6 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 30px;
 }
 
 /*cabecalho*/
@@ -60,18 +62,26 @@ h1 {
   font-size: 60px;
   color: white;
 }
+input {
+  font-size: 25px;
+}
+button {
+  font-size: 25px;
+}
 
 /*conteudo*/
 #montadoras {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 .carros {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .carro {
@@ -79,4 +89,34 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+h2 {
+  font-size: 32px;
+  margin: 4px;
+  text-align: center;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+}
+img {
+  border-radius: 30px;
+}
+
+/*Rodape*/
+h5 {
+  font-size: 24px;
+  padding: 0px;
+  margin: 0px;
+}
+#telefone {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
 }
