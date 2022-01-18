@@ -29,13 +29,7 @@ function App() {
             <h3>CHEVROLET:</h3>
           </div>
           <div class="carros">
-            <h3>CITROEN::</h3>
-          </div>
-          <div class="carros">
             <h3>FIAT:</h3>
-          </div>
-          <div class="carros">
-            <h3>FORD:</h3>
           </div>
           <div class="carros">
             <h3>HONDA:</h3>
@@ -54,9 +48,6 @@ function App() {
           </div>
           <div class="carros">
             <h3>RENAULT:</h3>
-          </div>
-          <div class="carros">
-            <h3>TOYOTA:</h3>
           </div>
           <div class="carros">
             <h3>VOLKSWAGEN:</h3>
