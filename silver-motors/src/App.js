@@ -49,6 +49,7 @@ function App() {
             Somos uma empresa de vendas de carros novos e seminovos
             há mais de 3 anos no mercado com ótimos profissionais e técnicos
             que irão te auxiliar a conseguir o sonho de adquirir um carro.
+            Além disso, vendemos motos novas e seminovas
           </p>
         </div>
         <div id="montadoras">
