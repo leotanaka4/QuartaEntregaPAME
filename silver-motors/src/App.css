@@ -7,13 +7,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 5000px;
 }
+
 /*Principais*/
 #cabecalho {
   background: gray;
   width: 100%;
-  height: 10%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,7 +23,7 @@
 #conteudo {
   background: white;
   width: 100%;
-  height: 80%;
+  height: 4800px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -31,12 +32,13 @@
 #rodape {
   background: gray;
   width: 100%;
-  height: 10%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
+
 /*cabecalho*/
 #titulo {
   display: flex;
@@ -53,4 +55,28 @@
   align-items: center;
   width: 40%;
   height: 100%;
+}
+h1 {
+  font-size: 60px;
+  color: white;
+}
+
+/*conteudo*/
+#montadoras {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.carros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.carro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
