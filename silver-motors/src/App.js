@@ -2,22 +2,23 @@ import './App.css';
 
 function App() {
   return (
-    <div id="app">
+    <body id="app">
       <div id="cabecalho">
         <div id="titulo">
-          <h1>Silver Motors</h1>
+          <h1>SILVER MOTORS</h1>
         </div>
         <div id="pesquisa">
-
+          <input/>
+          <button>Pesquisar</button>
         </div>
       </div>
-      <div id="lista">
+      <div id="conteudo">
 
       </div>
-      <div id="informacoes">
+      <div id = "rodape">
 
       </div>
-    </div>
+    </body>
   );
 }
 
