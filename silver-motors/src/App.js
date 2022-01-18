@@ -22,40 +22,130 @@ function App() {
           </p>
         </div>
         <div id="montadoras">
+          <h3>CHERY:</h3>
           <div class="carros">
-            <h3>CHERY:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>CHEVROLET:</h3>
           <div class="carros">
-            <h3>CHEVROLET:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>FIAT:</h3>
           <div class="carros">
-            <h3>FIAT:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>HONDA:</h3>
           <div class="carros">
-            <h3>HONDA:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>HYUNDAI:</h3>
           <div class="carros">
-            <h3>HYUNDAI:</h3>
+            <div class="carro">
+              
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>JEEP:</h3>
           <div class="carros">
-            <h3>JEEP:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>NISSAN:</h3>
           <div class="carros">
-            <h3>NISSAN:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>PEUGEOT:</h3>
           <div class="carros">
-            <h3>PEUGEOT:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>RENAULT:</h3>
           <div class="carros">
-            <h3>RENAULT:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
+          <h3>VOLKSWAGEN:</h3>
           <div class="carros">
-            <h3>VOLKSWAGEN:</h3>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
+            <div class="carro">
+
+            </div>
           </div>
         </div>
       </div>
       <div id = "rodape">
-        <h3>Telefone de contato:</h3>
+        <h4>Telefone de contato:</h4>
         <p>+55 21 2498-2088</p>
       </div>
     </div>
