@@ -8,9 +8,15 @@ import chevrolet3 from './imagens/chevrolet-tracker.jpg'
 import fiat1 from './imagens/fiat-strada.jpeg'
 import fiat2 from './imagens/fiat-argo.jpeg'
 import fiat3 from './imagens/fiat-mobi.jpg'
+import ford1 from './imagens/ford-ka.jpeg'
+import ford2 from './imagens/ford-ecosport.jpg'
+import ford3 from './imagens/ford-ranger.jpg'
 import honda1 from './imagens/honda-fit.jpg'
 import honda2 from './imagens/honda-hr-v.jpg'
 import honda3 from './imagens/honda-civic.jpg'
+import honda4 from './imagens/honda-cg-160.jpeg'
+import honda5 from './imagens/honda-biz-110i.jpg'
+import honda6 from './imagens/honda-nxr-160.jpg'
 import hyundai1 from './imagens/hyundai-tucson.jpg'
 import hyundai2 from './imagens/hyundai-creta.jpg'
 import hyundai3 from './imagens/hyundai-hb20.jpg'
@@ -26,6 +32,9 @@ import peugeot3 from './imagens/peugeot-3008.jpg'
 import renault1 from './imagens/renault-captur.jpg'
 import renault2 from './imagens/renault-duster.jpg'
 import renault3 from './imagens/renault-kwid.jpg'
+import suzuki1 from './imagens/suzuki-gsx-s750.jpg'
+import suzuki2 from './imagens/suzuki-v-strom-650.jpg'
+import suzuki3 from './imagens/suzuki-gsx-s1000.jpg'
 import volkswagen1 from './imagens/volkswagen-gol.jpg'
 import volkswagen2 from './imagens/volkswagen-t-cross.jpg'
 import volkswagen3 from './imagens/volkswagen-nivus.jpg'
@@ -49,7 +58,7 @@ function App() {
       <div id="conteudo">
         <div id="historia">
           <h2>O que nós somos?</h2>
-          <p>
+          <p id="texto">
             Somos uma empresa de vendas de carros novos e seminovos
             há mais de 3 anos no mercado com ótimos profissionais e técnicos
             que irão te auxiliar a conseguir o sonho de adquirir um carro.
@@ -76,11 +85,23 @@ function App() {
             <GerarCarro nome="Argo" arquivo={fiat2} preço="75.000,00"/>
             <GerarCarro nome="Mobi" arquivo={fiat3} preço="65.000,00"/>
           </div>
-          <h3>HONDA:</h3>
+          <h3>FORD:</h3>
+          <div class="carros">
+            <GerarCarro nome="Ka" arquivo={ford1} preço="50.000,00"/>
+            <GerarCarro nome="EcoSport" arquivo={ford2} preço="70.000,00"/>
+            <GerarCarro nome="Ranger" arquivo={ford3} preço="150.000,00"/>
+          </div>
+          <h3>HONDA CARROS:</h3>
           <div class="carros">
             <GerarCarro nome="Fit" arquivo={honda1} preço="80.000,00"/>
             <GerarCarro nome="HR-V" arquivo={honda2} preço="120.000,00"/>
             <GerarCarro nome="Civic" arquivo={honda3} preço="110.000,00"/>
+          </div>
+          <h3>HONDA MOTOS:</h3>
+          <div class="carros">
+            <GerarCarro nome="CG 160" arquivo={honda4} preço="9.000,00"/>
+            <GerarCarro nome="Biz 110i" arquivo={honda5} preço="7.500,00"/>
+            <GerarCarro nome="NXR 160" arquivo={honda6} preço="10.000,00"/>
           </div>
           <h3>HYUNDAI:</h3>
           <div class="carros">
@@ -112,6 +133,12 @@ function App() {
             <GerarCarro nome="Duster" arquivo={renault2} preço="100.000,00"/>
             <GerarCarro nome="Kwid" arquivo={renault3} preço="50.000,00"/>
           </div>
+          <h3>SUZUKI:</h3>
+          <div class="carros">
+            <GerarCarro nome="GSX-S750" arquivo={suzuki1} preço="58.000,00"/>
+            <GerarCarro nome="V-Strom 650" arquivo={suzuki2} preço="38.000,00"/>
+            <GerarCarro nome="GSX-S1000" arquivo={suzuki3} preço="90.000,00"/>
+          </div>
           <h3>VOLKSWAGEN:</h3>
           <div class="carros">
             <GerarCarro nome="Gol" arquivo={volkswagen1} preço="70.000,00"/>
@@ -127,8 +154,8 @@ function App() {
         </div>
       </div>
       <div id = "rodape">
-        <h5>Telefone de contato:</h5>
-        <p id="telefone">+55 21 2498-2088</p>
+        <p id="contato">Telefone de contato: +55 21 2498-2088</p>
+        <p id="contato">Horário de funcionamento: 9h às 18h</p>
       </div>
     </div>
   );
