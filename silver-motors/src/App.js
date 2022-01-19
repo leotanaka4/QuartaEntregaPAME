@@ -17,9 +17,6 @@ import hyundai3 from './imagens/hyundai-hb20.jpg'
 import jeep1 from './imagens/jeep-compass.jpg'
 import jeep2 from './imagens/jeep-renegade.jpg'
 import jeep3 from './imagens/jeep-commander.jpg'
-import kawasaki1 from './imagens/kawasaki-z400.jpg'
-import kawasaki2 from './imagens/kawasaki-ninja-400.png'
-import kawasaki3 from './imagens/kawasaki-versys-300.jpg'
 import nissan1 from './imagens/nissan-versa.jpg'
 import nissan2 from './imagens/nissan-leaf.jpg'
 import nissan3 from './imagens/nissan-kicks.jpg'
@@ -35,6 +32,7 @@ import volkswagen3 from './imagens/volkswagen-nivus.jpg'
 import yamaha1 from './imagens/yamaha-crosser-150.jpg'
 import yamaha2 from './imagens/yamaha-factor-150.jpg'
 import yamaha3 from './imagens/yamaha-fazer-150.jpg'
+import GerarCarro from './Carro'
 
 function App() {
   return (
@@ -55,226 +53,76 @@ function App() {
             Somos uma empresa de vendas de carros novos e seminovos
             há mais de 3 anos no mercado com ótimos profissionais e técnicos
             que irão te auxiliar a conseguir o sonho de adquirir um carro.
-            Além disso, vendemos motos novas e seminovas de diversas marca
+            Além disso, vendemos motos novas e seminovas de diversas marcas
             disponíveis no estoque da loja.
           </p>
         </div>
         <div id="montadoras">
           <h3>CHERY:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Tiggo 5x</h4>
-              <img src={chery1} alt="Tiggo 5x" width="400" height="300"/>
-              <p>Preço: R$ 140.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Tiggo 8</h4>
-              <img src={chery2} alt="Tiggo 8" width="400" height="300"/>
-              <p>Preço: R$ 170.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Tiggo 2</h4>
-              <img src={chery3} alt="Tiggo 8" width="400" height="300"/>
-              <p>Preço: R$ 170.000,00</p>
-            </div>
+            <GerarCarro nome="Tiggo 5x" arquivo={chery1} preço="140.000,00"/>
+            <GerarCarro nome="Tiggo 8" arquivo={chery2} preço="170.000,00"/>
+            <GerarCarro nome="Tiggo 2" arquivo={chery3} preço="170.000,00"/>
           </div>
           <h3>CHEVROLET:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Onix</h4>
-              <img src={chevrolet1} alt="Onix" width="400" height="300"/>
-              <p>Preço: R$ 75.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Onix Plus</h4>
-              <img src={chevrolet2} alt="Onix Plus" width="400" height="300"/>
-              <p>Preço: R$ 80.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Tracker</h4>
-              <img src={chevrolet3} alt="Tracker" width="400" height="300"/>
-              <p>Preço: R$ 70.000,00</p>
-            </div>
+            <GerarCarro nome="Onix" arquivo={chevrolet1} preço="75.000,00"/>
+            <GerarCarro nome="Onix Plus" arquivo={chevrolet2} preço="80.000,00"/>
+            <GerarCarro nome="Tracker" arquivo={chevrolet3} preço="70.000,00"/>
           </div>
           <h3>FIAT:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Strada</h4>
-              <img src={fiat1} alt="Strada" width="400" height="300"/>
-              <p>Preço: R$ 90.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Argo</h4>
-              <img src={fiat2} alt="Argo" width="400" height="300"/>
-              <p>Preço: R$ 75.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Mobi</h4>
-              <img src={fiat3} alt="Mobi" width="400" height="300"/>
-              <p>Preço: R$ 65.000,00</p>
-            </div>
+            <GerarCarro nome="Strada" arquivo={fiat1} preço="90.000,00"/>
+            <GerarCarro nome="Argo" arquivo={fiat2} preço="75.000,00"/>
+            <GerarCarro nome="Mobi" arquivo={fiat3} preço="65.000,00"/>
           </div>
           <h3>HONDA:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Fit</h4>
-              <img src={honda1} alt="Fit" width="400" height="300"/>
-              <p>Preço: R$ 80.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>HR-V</h4>
-              <img src={honda2} alt="HR-V" width="400" height="300"/>
-              <p>Preço: R$ 120.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Civic</h4>
-              <img src={honda3} alt="Civic" width="400" height="300"/>
-              <p>Preço: R$ 110.000,00</p>
-            </div>
+            <GerarCarro nome="Fit" arquivo={honda1} preço="80.000,00"/>
+            <GerarCarro nome="HR-V" arquivo={honda2} preço="120.000,00"/>
+            <GerarCarro nome="Civic" arquivo={honda3} preço="110.000,00"/>
           </div>
           <h3>HYUNDAI:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Tucson</h4>
-              <img src={hyundai1} alt="Tucson" width="400" height="300"/>
-              <p>Preço: R$ 200.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Creta</h4>
-              <img src={hyundai2} alt="Creta" width="400" height="300"/>
-              <p>Preço: R$ 95.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>HB20</h4>
-              <img src={hyundai3} alt="HB20" width="400" height="300"/>
-              <p>Preço: R$ 75.000,00</p>
-            </div>
+            <GerarCarro nome="Tucson" arquivo={hyundai1} preço="200.000,00"/>
+            <GerarCarro nome="Creta" arquivo={hyundai2} preço="95.000,00"/>
+            <GerarCarro nome="HB20" arquivo={hyundai3} preço="75.000,00"/>
           </div>
           <h3>JEEP:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Compass</h4>
-              <img src={jeep1} alt="Compass" width="400" height="300"/>
-              <p>Preço: R$ 160.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Renegade</h4>
-              <img src={jeep2} alt="Renegade" width="400" height="300"/>
-              <p>Preço: R$ 100.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Commander</h4>
-              <img src={jeep3} alt="Commander" width="400" height="300"/>
-              <p>Preço: R$ 215.000,00</p>
-            </div>
-          </div>
-          <h3>KAWASAKI:</h3>
-          <div class="carros">
-            <div class="carro">
-              <h4>Z400</h4>
-              <img src={kawasaki1} alt="Z400" width="400" height="300"/>
-              <p>Preço: R$ 35.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Ninja 400</h4>
-              <img src={kawasaki2} alt="Ninja 400" width="400" height="300"/>
-              <p>Preço: R$ 35.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Versys 300</h4>
-              <img src={kawasaki3} alt="Versys 300" width="400" height="300"/>
-              <p>Preço: R$ 38.000,00</p>
-            </div>
+            <GerarCarro nome="Compass" arquivo={jeep1} preço="160.000,00"/>
+            <GerarCarro nome="Renegade" arquivo={jeep2} preço="100.000,00"/>
+            <GerarCarro nome="Commander" arquivo={jeep3} preço="215.000,00"/>
           </div>
           <h3>NISSAN:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Versa</h4>
-              <img src={nissan1} alt="Versa" width="400" height="300"/>
-              <p>Preço: R$ 90.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Leaf</h4>
-              <img src={nissan2} alt="Leaf" width="400" height="300"/>
-              <p>Preço: R$ 290.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Kicks</h4>
-              <img src={nissan3} alt="Kicks" width="400" height="300"/>
-              <p>Preço: R$ 105.000,00</p>
-            </div>
+            <GerarCarro nome="Versa" arquivo={nissan1} preço="90.000,00"/>
+            <GerarCarro nome="Leaf" arquivo={nissan2} preço="290.000,00"/>
+            <GerarCarro nome="Kicks" arquivo={nissan3} preço="105.000,00"/>
           </div>
           <h3>PEUGEOT:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>208</h4>
-              <img src={peugeot1} alt="208" width="400" height="300"/>
-              <p>Preço: R$ 85.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>2008</h4>
-              <img src={peugeot2} alt="2008" width="400" height="300"/>
-              <p>Preço: R$ 85.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>3008</h4>
-              <img src={peugeot3} alt="3008" width="400" height="300"/>
-              <p>Preço: R$ 260.000,00</p>
-            </div>
+            <GerarCarro nome="208" arquivo={peugeot1} preço="85.000,00"/>
+            <GerarCarro nome="2008" arquivo={peugeot2} preço="85.000,00"/>
+            <GerarCarro nome="3008" arquivo={peugeot3} preço="260.000,00"/>
           </div>
           <h3>RENAULT:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Captur</h4>
-              <img src={renault1} alt="Captur" width="400" height="300"/>
-              <p>Preço: R$ 120.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Duster</h4>
-              <img src={renault2} alt="Duster" width="400" height="300"/>
-              <p>Preço: R$ 100.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Kwid</h4>
-              <img src={renault3} alt="Kwid" width="400" height="300"/>
-              <p>Preço: R$ 50.000,00</p>
-            </div>
+            <GerarCarro nome="Captur" arquivo={renault1} preço="120.000,00"/>
+            <GerarCarro nome="Duster" arquivo={renault2} preço="100.000,00"/>
+            <GerarCarro nome="Kwid" arquivo={renault3} preço="50.000,00"/>
           </div>
           <h3>VOLKSWAGEN:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Gol</h4>
-              <img src={volkswagen1} alt="Gol" width="400" height="300"/>
-              <p>Preço: R$ 70.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>T-Cross</h4>
-              <img src={volkswagen2} alt="T-Cross" width="400" height="300"/>
-              <p>Preço: R$ 110.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Nivus</h4>
-              <img src={volkswagen3} alt="Nivus" width="400" height="300"/>
-              <p>Preço: R$ 120.000,00</p>
-            </div>
+            <GerarCarro nome="Gol" arquivo={volkswagen1} preço="70.000,00"/>
+            <GerarCarro nome="T-Cross" arquivo={volkswagen2} preço="110.000,00"/>
+            <GerarCarro nome="Nivus" arquivo={volkswagen3} preço="120.000,00"/>
           </div>
           <h3>YAMAHA:</h3>
           <div class="carros">
-            <div class="carro">
-              <h4>Crosser 150</h4>
-              <img src={yamaha1} alt="Crosser 150" width="400" height="300"/>
-              <p>Preço: R$ 15.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Factor 150</h4>
-              <img src={yamaha2} alt="Factor 150" width="400" height="300"/>
-              <p>Preço: R$ 14.000,00</p>
-            </div>
-            <div class="carro">
-              <h4>Fazer 150</h4>
-              <img src={yamaha3} alt="Fazer 150" width="400" height="300"/>
-              <p>Preço: R$ 12.000,00</p>
-            </div>
+            <GerarCarro nome="Crosser 150" arquivo={yamaha1} preço="15.000,00"/>
+            <GerarCarro nome="Factor 150" arquivo={yamaha2} preço="14.000,00"/>
+            <GerarCarro nome="Fazer 150" arquivo={yamaha3} preço="12.000,00"/>
           </div>
         </div>
       </div>
