@@ -102,7 +102,6 @@ button {
   align-items: center;
   margin-bottom: 30px;
   border: solid;
-  border-radius: 10px;
 }
 .carro {
   display: flex;
