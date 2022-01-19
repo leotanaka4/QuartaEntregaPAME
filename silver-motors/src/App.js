@@ -17,6 +17,9 @@ import hyundai3 from './imagens/hyundai-hb20.jpg'
 import jeep1 from './imagens/jeep-compass.jpg'
 import jeep2 from './imagens/jeep-renegade.jpg'
 import jeep3 from './imagens/jeep-commander.jpg'
+import kawasaki1 from './imagens/kawasaki-z400.jpg'
+import kawasaki2 from './imagens/kawasaki-ninja-400.png'
+import kawasaki3 from './imagens/kawasaki-versys-300.jpg'
 import nissan1 from './imagens/nissan-versa.jpg'
 import nissan2 from './imagens/nissan-leaf.jpg'
 import nissan3 from './imagens/nissan-kicks.jpg'
@@ -29,6 +32,9 @@ import renault3 from './imagens/renault-kwid.jpg'
 import volkswagen1 from './imagens/volkswagen-gol.jpg'
 import volkswagen2 from './imagens/volkswagen-t-cross.jpg'
 import volkswagen3 from './imagens/volkswagen-nivus.jpg'
+import yamaha1 from './imagens/yamaha-crosser-150.jpg'
+import yamaha2 from './imagens/yamaha-factor-150.jpg'
+import yamaha3 from './imagens/yamaha-fazer-150.jpg'
 
 function App() {
   return (
@@ -49,7 +55,8 @@ function App() {
             Somos uma empresa de vendas de carros novos e seminovos
             há mais de 3 anos no mercado com ótimos profissionais e técnicos
             que irão te auxiliar a conseguir o sonho de adquirir um carro.
-            Além disso, vendemos motos novas e seminovas
+            Além disso, vendemos motos novas e seminovas de diversas marca
+            disponíveis no estoque da loja.
           </p>
         </div>
         <div id="montadoras">
@@ -161,6 +168,24 @@ function App() {
               <p>Preço: R$ 215.000,00</p>
             </div>
           </div>
+          <h3>KAWASAKI:</h3>
+          <div class="carros">
+            <div class="carro">
+              <h4>Z400</h4>
+              <img src={kawasaki1} alt="Z400" width="400" height="300"/>
+              <p>Preço: R$ 35.000,00</p>
+            </div>
+            <div class="carro">
+              <h4>Ninja 400</h4>
+              <img src={kawasaki2} alt="Ninja 400" width="400" height="300"/>
+              <p>Preço: R$ 35.000,00</p>
+            </div>
+            <div class="carro">
+              <h4>Versys 300</h4>
+              <img src={kawasaki3} alt="Versys 300" width="400" height="300"/>
+              <p>Preço: R$ 38.000,00</p>
+            </div>
+          </div>
           <h3>NISSAN:</h3>
           <div class="carros">
             <div class="carro">
@@ -231,6 +256,24 @@ function App() {
               <h4>Nivus</h4>
               <img src={volkswagen3} alt="Nivus" width="400" height="300"/>
               <p>Preço: R$ 120.000,00</p>
+            </div>
+          </div>
+          <h3>YAMAHA:</h3>
+          <div class="carros">
+            <div class="carro">
+              <h4>Crosser 150</h4>
+              <img src={yamaha1} alt="Crosser 150" width="400" height="300"/>
+              <p>Preço: R$ 15.000,00</p>
+            </div>
+            <div class="carro">
+              <h4>Factor 150</h4>
+              <img src={yamaha2} alt="Factor 150" width="400" height="300"/>
+              <p>Preço: R$ 14.000,00</p>
+            </div>
+            <div class="carro">
+              <h4>Fazer 150</h4>
+              <img src={yamaha3} alt="Fazer 150" width="400" height="300"/>
+              <p>Preço: R$ 12.000,00</p>
             </div>
           </div>
         </div>
